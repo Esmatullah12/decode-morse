@@ -49,7 +49,7 @@ def decode_word(morse_words)
   end
   @decode_word
 end
-  
+
 def decode_message(morse_message)
   @decode_message = ''
   message_words = morse_message.split('   ')
@@ -57,8 +57,8 @@ def decode_message(morse_message)
     @decode_message += decode_word(word)
     @decode_message += ' ' unless index == message_words.size - 1
   end
-print @decode_message
+  print @decode_message
 end
-  
+
 decode_message('.-   -... --- -..-   ..-. ..- .-.. .-..   --- ..-.   .-. ..- -... .. . ...')
 # A BOX FULL OF RUBIES
